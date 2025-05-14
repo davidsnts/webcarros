@@ -42,7 +42,7 @@ export function Login() {
 
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="bg-white max-w-xl w-full rounded-lg"
+          className="bg-white max-w-xl w-full rounded-lg p-4"
         >
           <div className="mb-3">
             <Input
@@ -62,8 +62,9 @@ export function Login() {
               register={register}
             />
           </div>
-          <button className="cursor-pointer">Acessar</button>
+          <button type="submit" className="cursor-pointer bg-zinc-900 w-full rounded-md text-white h-10 font-medium">Acessar</button>
         </form>
+        <Link className="hover:text-blue-900 transition-all" to="/register"> Ainda não possui uma conta? Cadastre-se </Link>
       </div>
     </Container>
   );
